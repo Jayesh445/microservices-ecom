@@ -1,0 +1,61 @@
+# Test Profile Configuration
+spring:
+  # H2 In-Memory Database for Testing
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  # JPA/Hibernate Configuration - Test
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # Create schema on startup, drop on shutdown
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+  # H2 Console (for debugging tests)
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  # Email Configuration - Mock for Testing
+  mail:
+    host: localhost
+    port: 2525
+    username: test
+    password: test
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+
+# Logging Configuration - Test (Less verbose)
+logging:
+  level:
+    works.jayesh.demo: INFO
+    org.springframework.security: INFO
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+# JWT Configuration - Test
+jwt:
+  secret: TestSecretKeyForJwtTokenGenerationAndValidationInTestEnvironmentShouldBeAtLeast256BitsLong
+  access-token-expiration: 900000 # 15 minutes
+  refresh-token-expiration: 604800000 # 7 days
+
+# Test Mode Flag
+app:
+  mode: test
+  otp:
+    console-output: true # Print OTP to console in tests
