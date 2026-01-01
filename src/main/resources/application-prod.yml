@@ -1,0 +1,99 @@
+# Production Profile Configuration
+spring:
+  # Database Configuration - Production
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/ecommerce_db}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+
+  # JPA/Hibernate Configuration - Production
+  jpa:
+    hibernate:
+      ddl-auto: validate # Only validate schema, don't auto-create
+    show-sql: false # Don't show SQL in production
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        order_inserts: true
+        order_updates: true
+        batch_versioned_data: true
+
+  # Email Configuration - Production (Real Email Sending)
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:your-email@gmail.com}
+    password: ${MAIL_PASSWORD:your-app-password}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
+# Logging Configuration - Production (Minimal with Correlation IDs)
+logging:
+  level:
+    works.jayesh.demo: INFO # Application logs
+    org.springframework.security: WARN # Security logs
+    org.springframework.mail: WARN # Email logs
+    org.hibernate.SQL: WARN # No SQL queries
+    org.springframework.web: WARN # Web requests
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%X{correlationId}] - %msg%n"
+  file:
+    name: logs/ecommerce-app.log
+    max-size: 10MB
+    max-history: 30
+
+# Actuator Configuration - Production (Limited endpoints)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: when-authorized
+      probes:
+        enabled: true
+  health:
+    livenessState:
+      enabled: true
+    readinessState:
+      enabled: true
+  metrics:
+    tags:
+      application: ecommerce-app
+      environment: production
+    prometheus:
+        metrics:
+            export:
+                enabled: true
+
+# Production Mode Flag
+app:
+  mode: production
+  otp:
+    console-output: false # Never print OTP to console in production
+
+# Server Configuration - Production
+server:
+  compression:
+    enabled: true
+  http2:
+    enabled: true

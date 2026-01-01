@@ -1,0 +1,75 @@
+# Development Profile Configuration
+spring:
+  # Database Configuration - Development
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  # JPA/Hibernate Configuration - Development
+  jpa:
+    hibernate:
+      ddl-auto: update # Auto-create/update tables in dev
+    show-sql: true # Show SQL queries in console
+    properties:
+      hibernate:
+        format_sql: true # Format SQL for readability
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+  # Email Configuration - Development (Console Output)
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: jayeshgupta.eng@gmail.com
+    password: czlcpgqmxunnowbo
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+# Logging Configuration - Development (Verbose)
+logging:
+  level:
+    works.jayesh.demo: DEBUG # Application logs
+    org.springframework.security: DEBUG # Security logs
+    org.springframework.mail: DEBUG # Email logs
+    org.hibernate.SQL: DEBUG # SQL queries
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE # SQL parameters
+    org.springframework.web: DEBUG # Web requests
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%X{correlationId}] - %msg%n"
+
+# Actuator Configuration - Development (All endpoints exposed)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /actuator
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  health:
+    livenessState:
+      enabled: true
+    readinessState:
+      enabled: true
+  metrics:
+    tags:
+      application: ecommerce-app
+      environment: development
+
+# Development Mode Flag
+app:
+  mode: development
+  otp:
+    console-output: true # Print OTP to console in dev mode
