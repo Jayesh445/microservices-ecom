@@ -3,9 +3,63 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  <component name="ChangeListManager">
+    <list default="true" id="31d25e28-590e-43fb-92ad-a8cff517d8b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/revise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/ui/theme/Color.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/ui/theme/Color.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/ui/theme/Theme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/ui/theme/Theme.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/ui/theme/Type.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/java/works/jayesh/webby/ui/theme/Type.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="37n2vVTFOfCgravbQ7aFvai2mIL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31d25e28-590e-43fb-92ad-a8cff517d8b6" name="Changes" comment="" />
+      <created>1767524747479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767524747479</updated>
+    </task>
+    <servers />
+  </component>
 </project>

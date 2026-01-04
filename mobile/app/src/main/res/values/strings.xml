@@ -1,3 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Webby</string>
+
+    <!-- Common -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="retry">Retry</string>
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="no_internet">No internet connection</string>
+
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_login_with">Or login with</string>
+    <string name="login_with_otp">Login with OTP</string>
+    <string name="register_with_otp">Register with OTP</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_sent">OTP sent to your email</string>
+
+    <!-- Validation -->
+    <string name="error_email_empty">Email cannot be empty</string>
+    <string name="error_email_invalid">Invalid email address</string>
+    <string name="error_password_empty">Password cannot be empty</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_first_name_empty">First name cannot be empty</string>
+    <string name="error_last_name_empty">Last name cannot be empty</string>
+    <string name="error_phone_invalid">Invalid phone number</string>
+
+    <!-- Home -->
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="deals">Deals</string>
+    <string name="featured_products">Featured Products</string>
+    <string name="best_sellers">Best Sellers</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="recommended_for_you">Recommended for You</string>
+    <string name="view_all">View All</string>
+    <string name="search_products">Search products…</string>
+
+    <!-- Product -->
+    <string name="product_details">Product Details</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="in_stock">In Stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="price">Price</string>
+    <string name="discount">Discount</string>
+    <string name="description">Description</string>
+    <string name="specifications">Specifications</string>
+    <string name="reviews">Reviews</string>
+    <string name="ratings">Ratings</string>
+    <string name="rating">Rating</string>
+    <string name="seller">Seller</string>
+    <string name="brand">Brand</string>
+    <string name="quantity">Quantity</string>
+    <string name="share_product">Share Product</string>
+    <string name="add_to_wishlist">Add to Wishlist</string>
+
+    <!-- Cart -->
+    <string name="cart">Cart</string>
+    <string name="my_cart">My Cart</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="remove_from_cart">Remove from Cart</string>
+    <string name="cart_total">Cart Total</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="items_count">%1$d items</string>
+    <string name="item_added_to_cart">Item added to cart</string>
+    <string name="item_removed_from_cart">Item removed from cart</string>
+
+    <!-- Checkout -->
+    <string name="checkout">Checkout</string>
+    <string name="select_address">Select Delivery Address</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="select_payment_method">Select Payment Method</string>
+    <string name="place_order">Place Order</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="cod">Cash on Delivery</string>
+    <string name="upi">UPI</string>
+    <string name="card">Credit/Debit Card</string>
+    <string name="net_banking">Net Banking</string>
+
+    <!-- Address -->
+    <string name="addresses">Addresses</string>
+    <string name="add_address">Add Address</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="full_name">Full Name</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2 (Optional)</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip_code">ZIP Code</string>
+    <string name="country">Country</string>
+    <string name="address_type">Address Type</string>
+    <string name="home_address">Home</string>
+    <string name="work_address">Work</string>
+    <string name="other_address">Other</string>
+    <string name="set_as_default">Set as default address</string>
+    <string name="default_address">Default</string>
+
+    <!-- Orders -->
+    <string name="orders">Orders</string>
+    <string name="my_orders">My Orders</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_number">Order Number</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_status">Order Status</string>
+    <string name="track_order">Track Order</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="return_order">Return Order</string>
+    <string name="no_orders">No orders yet</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="order_confirmed">Confirmed</string>
+    <string name="order_processing">Processing</string>
+    <string name="order_shipped">Shipped</string>
+    <string name="order_delivered">Delivered</string>
+    <string name="order_cancelled">Cancelled</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="change_password">Change Password</string>
+    <string name="notifications">Notifications</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="about">About</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="app_version">App Version</string>
+
+    <!-- Review -->
+    <string name="write_review">Write a Review</string>
+    <string name="review_title">Review Title</string>
+    <string name="review_comment">Your Review</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="verified_purchase">Verified Purchase</string>
+    <string name="helpful">Helpful</string>
+    <string name="not_helpful">Not Helpful</string>
+    <string name="rate_product">Rate this product</string>
+
+    <!-- Filter & Sort -->
+    <string name="apply_filters">Apply Filters</string>
+    <string name="clear_filters">Clear Filters</string>
+    <string name="price_range">Price Range</string>
+    <string name="sort_by">Sort By</string>
+    <string name="sort_relevance">Relevance</string>
+    <string name="sort_price_low_high">Price: Low to High</string>
+    <string name="sort_price_high_low">Price: High to Low</string>
+    <string name="sort_newest">Newest First</string>
+    <string name="sort_popularity">Popularity</string>
+    <string name="sort_rating">Rating</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_profile">Profile</string>
 </resources>
