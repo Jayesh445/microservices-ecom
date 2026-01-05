@@ -245,7 +245,7 @@
 7. Add proper error handling
 8. Connect UI to ViewModels
 
-### Remaining Screens
+### Screens
 
 1. Register Screen
 2. OTP Verification Screen
